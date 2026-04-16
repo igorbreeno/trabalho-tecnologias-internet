@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Contato - Pirate's Legacy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: transparent; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .contato-box {
+            max-width: 500px;
+            background: rgba(15, 15, 15, 0.95);
+            padding: 50px;
+            border-radius: 20px;
+            border: 2px solid #ffcc00;
+            text-align: center;
+            box-shadow: 0 0 40px rgba(255, 204, 0, 0.2);
+        }
+        h1 { font-family: 'Bebas Neue'; color: #ffcc00; font-size: 3.5rem; margin-bottom: 10px; }
+        p { color: #ccc; margin-bottom: 30px; }
+
+        .lista-contatos {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .btn-rede-social {
+            display: block;
+            padding: 15px;
+            border: 1px solid #333;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .btn-rede-social:hover {
+            border-color: #ffcc00;
+            background: rgba(255, 204, 0, 0.1);
+            transform: translateX(10px);
+        }
+
+        .btn-rede-social span {
+            color: #ffcc00;
+            margin-right: 10px;
+        }
+
+        .btn-voltar {
+            margin-top: 30px;
+            color: #666;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 0.9rem;
+        }
+        .btn-voltar:hover { color: white; }
+    </style>
+</head>
+<body>
+
+    <div class="contato-box">
+        <h1>CONTATO</h1>
+        <p>Envie uma mensagem para o capitão ou peça suporte para sua jornada.</p>
+        
+        <div class="lista-contatos">
+            <a href="https://wa.me/5534984440768" target="_blank" class="btn-rede-social">
+        <span>➔</span> WHATSAPP
+    </a>
+
+            <a href="https://discord.com/users/igorbreeno" target="_blank" class="btn-rede-social">
+                <span>➔</span> DISCORD OFICIAL
+            </a>
+<a href="mailto:igorbrenocontato@gmail.com" onclick="copiarEmail(event, 'igorbrenocontato@gmail.com')" class="btn-rede-social">
+    <span>➔</span> EMAIL
+</a>
+
+<script>
+function copiarEmail(event, email) {
+   
+    navigator.clipboard.writeText(email);
+    
+    
+    alert("O endereço de e-mail foi copiado! Se o seu app não abriu, basta colar no seu Gmail/Outlook.");
+}
+</script>
+        </div>
+        
+        <a href="index.html" class="btn-voltar">← Voltar para a Home</a>
+    </div>
+
+</body>
+</html>

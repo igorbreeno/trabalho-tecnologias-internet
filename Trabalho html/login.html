@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Pirate's Legacy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            background-color: #0a0a0a;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .login-box {
+            background: #151515;
+            padding: 40px;
+            border-radius: 10px;
+            border: 1px solid #333;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        h2 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 3rem;
+            color: #ffcc00;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #bbb;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px;
+            background: #222;
+            border: 1px solid #444;
+            border-radius: 5px;
+            color: white;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .input-group input:focus {
+            border-color: #ffcc00;
+        }
+
+        .btn-login {
+            width: 100%;
+            padding: 15px;
+            background: #ffcc00;
+            border: none;
+            border-radius: 5px;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+
+        .btn-login:hover {
+            background: #e6b800;
+            transform: scale(1.02);
+        }
+
+        .back-link {
+            display: block;
+            margin-top: 20px;
+            color: #666;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .back-link:hover { color: #ffcc00; }
+    </style>
+</head>
+<body>
+
+    <div class="login-box">
+        <h2>ENTRAR NO CLÃ</h2>
+        <form>
+            <div class="input-group">
+                <label>NOME DE PIRATA (LOGIN)</label>
+                <input type="text" placeholder="Ex: JackSparrow" required>
+            </div>
+            <div class="input-group">
+                <label>SENHA</label>
+                <input type="password" placeholder="••••••••" required>
+            </div>
+            <button type="submit" class="btn-login">ZARPAR</button>
+        </form>
+        <a href="index.html" class="back-link">← Voltar ao porto (Início)</a>
+    </div>
+
+</body>
+</html>

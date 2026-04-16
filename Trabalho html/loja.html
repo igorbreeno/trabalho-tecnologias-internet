@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Mercado Negro - Pirate's Legacy</title>
+    <link rel="stylesheet" href="css/style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        .body-loja {
+            background-color: #050505;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+            padding: 50px 20px;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+        }
+        .container-loja {
+            text-align: center;
+            max-width: 1100px;
+            width: 100%;
+        }
+        h1 { font-family: 'Bebas Neue'; color: #ffcc00; font-size: 4rem; margin-bottom: 10px; }
+        .subtitulo { color: #e8e9e4; letter-spacing: 2px; margin-bottom: 40px; text-transform: uppercase; }
+
+        .grid-itens {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+        .card-item {
+            background: #111;
+            border: 1px solid #ff7b0033;
+            padding: 20px;
+            border-radius: 15px;
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card-item:hover { 
+            border-color: #fbff00; 
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0, 212, 255, 0.1);
+        }
+        .img-item {
+            width: 100%;
+            height: 160px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        h3 { font-family: 'Bebas Neue'; font-size: 1.8rem; margin-bottom: 5px; }
+        .preco { color: #ffcc00; font-weight: bold; margin-bottom: 15px; font-size: 1.2rem; }
+
+        .btn-comprar {
+            background: #ffe600fd;
+            border: none;
+            padding: 12px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            transition: 0.3s;
+            color: #000;
+        }
+        .btn-comprar:hover { background: #fff; scale: 1.05; }
+        
+        .link-voltar { margin-top: 40px; display: inline-block; color: #888; text-decoration: none; transition: 0.3s; }
+        .link-voltar:hover { color: #fff; }
+    </style>
+</head>
+<body class="body-loja">
+    <div class="container-loja">
+        <h1>MERCADO NEGRO</h1>
+        <p class="subtitulo">Itens Raros e Lendários</p>
+
+        <div class="grid-itens">
+            <div class="card-item">
+                <div class="img-item" style="background-image: url('Imagens/navio.png');"></div>
+                <h3>GALEÃO IMPERIAL</h3>
+                <p class="preco">5.000 BERRY</p>
+                <button class="btn-comprar" onclick="verificarSaldo()">COMPRAR</button>
+            </div>
+
+            <div class="card-item">
+                <div class="img-item" style="background-image: url('Imagens/katana.png');"></div>
+                <h3>KATANA LENDÁRIA</h3>
+                <p class="preco">1.200 BERRY</p>
+                <button class="btn-comprar" onclick="verificarSaldo()">COMPRAR</button>
+            </div>
+
+            <div class="card-item">
+                <div class="img-item" style="background-image: url('Imagens/PONEGLYPH.png');"></div>
+                <h3>PONEGLYPH DE ROTA</h3>
+                <p class="preco">50.000 BERRY</p>
+                <button class="btn-comprar" onclick="verificarSaldo()">COMPRAR</button>
+            </div>
+
+            <div class="card-item">
+                <div class="img-item" style="background-image: url('Imagens/pistola.png');"></div>
+                <h3>PISTOLA DE PEDERNEIRA</h3>
+                <p class="preco">800 BERRY</p>
+                <button class="btn-comprar" onclick="verificarSaldo()">COMPRAR</button>
+            </div>
+        </div>
+
+        <a href="javascript:window.close()" class="link-voltar">← Fechar Mercado Negro</a>
+    </div>
+
+    <script>
+        function verificarSaldo() {
+            // Abre a caixinha de pergunta
+            const desejaRecarregar = confirm("SALDO INSUFICIENTE!\n\nSeu tesouro está vazio. Deseja recarregar seus Berries agora?");
+            
+            if (desejaRecarregar) {
+                alert("Redirecionando para o cofre da Marinha...");
+                 
+            }
+        }
+    </script>
+</body>
+</html>

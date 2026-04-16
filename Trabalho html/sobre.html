@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Sobre Nós - Pirate's Legacy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: transparent; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .sobre-container {
+            max-width: 800px;
+            background: rgba(15, 15, 15, 0.95);
+            padding: 50px;
+            border-radius: 20px;
+            border: 2px solid #ffcc00;
+            text-align: center;
+            box-shadow: 0 0 40px rgba(255, 204, 0, 0.2);
+            backdrop-filter: blur(10px);
+        }
+        h1 { font-family: 'Bebas Neue'; color: #ffcc00; font-size: 4rem; margin-bottom: 20px; }
+        
+        .historia {
+            text-align: left; /* Texto alinhado à esquerda fica melhor para ler muito conteúdo */
+            color: #ddd;
+            line-height: 1.8;
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+
+        .historia span { color: #ffcc00; font-weight: bold; }
+
+        .missao {
+            border-top: 1px solid rgba(255, 204, 0, 0.3);
+            padding-top: 20px;
+            font-style: italic;
+            color: #aaa;
+        }
+
+        .btn-voltar {
+            margin-top: 30px;
+            background: #ffcc00;
+            border: none;
+            color: black;
+            padding: 12px 30px;
+            font-family: 'Bebas Neue', cursive;
+            font-size: 1.3rem;
+            cursor: pointer;
+            transition: 0.3s;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-voltar:hover {
+            background: #fff;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sobre-container">
+        <h1>SOBRE O PROJETO</h1>
+        
+        <div class="historia">
+            <p>Bem-vindo ao <span>Pirate's Legacy</span>, um Site sobre um Jogo RPG para um trabalho de faculdade da <span> UNIUBE </span>. Nosso objetivo é proporcionar uma experiência imersiva onde cada escolha define o seu destino nos mares mais perigosos do mundo.</p>
+            <br> 
+            <p>Nascido da paixão por grandes aventuras como <span>One Piece</span>, este site é a porta de entrada para um universo de exploração, batalhas navais e a busca pelo tesouro supremo. Aqui, você não é apenas um jogador, você é o arquiteto da sua própria lenda.</p>
+        </div>
+
+        <p class="missao">"A liberdade não é dada, é conquistada através do aço e da coragem."</p>
+        
+        <a href="index.html" class="btn-voltar">VOLTAR PARA A HOME</a>
+    </div>
+
+</body>
+</html>

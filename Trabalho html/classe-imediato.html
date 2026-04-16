@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Imediato - Pirate's Legacy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+       body {
+            background-color: transparent; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .info-container {
+            max-width: 600px;
+            background: rgba(21, 21, 21, 0.95);
+            padding: 40px;
+            border-radius: 15px;
+            border: 2px solid #ffcc00;
+            text-align: center;
+            box-shadow: 0 0 30px rgba(255, 204, 0, 0.2);
+        }
+        h1 { font-family: 'Bebas Neue'; color: #ffcc00; font-size: 4rem; margin: 0; }
+        p { color: #ccc; line-height: 1.6; margin: 20px 0; font-size: 1.1rem; }
+        .stats { color: #ffcc00; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; }
+
+        
+        .btn-fechar {
+            margin-top: 20px;
+            background: transparent;
+            border: 2px solid #ffcc00;
+            color: #ffcc00;
+            padding: 10px 25px;
+            font-family: 'Bebas Neue', cursive;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: 0.3s;
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
+        .btn-fechar:hover {
+            background: #ffcc00;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="info-container">
+        <h1>IMEDIATO</h1>
+        <p>O braço direito e mestre das lâminas. O Imediato é o combatente mais versátil do bando, especializado em duelos de curta distância e na manutenção da ordem entre os tripulantes. Suas habilidades de corte são lendárias.</p>
+        <div class="stats">Combate: ★★★★★ | Lealdade: ★★★★★</div>
+        <br>
+        <button class="btn-fechar" onclick="fecharOuVoltar()">Fechar Detalhes</button>
+    </div>
+
+    <script>
+        function fecharOuVoltar() {
+            // Tenta fechar a aba atual
+            window.close();
+
+            
+            setTimeout(function() {
+                window.location.href = "index.html";
+            }, 200);
+        }
+    </script>
+</body>
+</html>

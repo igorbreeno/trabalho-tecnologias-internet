@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Download - Pirate's Legacy</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: transparent; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .download-box {
+            max-width: 500px;
+            background: rgba(15, 15, 15, 0.95);
+            padding: 50px;
+            border-radius: 20px;
+            border: 2px solid #ffcc00;
+            text-align: center;
+            box-shadow: 0 0 40px rgba(255, 204, 0, 0.2);
+        }
+        h1 { font-family: 'Bebas Neue'; color: #ffcc00; font-size: 3.5rem; margin-bottom: 10px; }
+        p { color: #ccc; margin-bottom: 30px; }
+
+        /* BOTÃO DE DOWNLOAD ESTILIZADO */
+        .btn-download {
+            display: inline-block;
+            background: #ffcc00;
+            color: black;
+            padding: 20px 40px;
+            font-family: 'Bebas Neue', cursive;
+            font-size: 1.8rem;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-download:hover {
+            background: #fff;
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+        }
+
+        .info-arquivo {
+            margin-top: 15px;
+            font-size: 0.8rem;
+            color: #666;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="download-box">
+        <h1>PRONTO PARA PARTIR?</h1>
+        <p>Baixe o cliente oficial e junte-se a milhares de piratas em busca do One Piece.</p>
+        
+        <a href="PiratesLegacy.zip" download class="btn-download">BAIXAR JOGO (.ZIP)</a>
+        
+        <span class="info-arquivo">Versão 1.0.2 - 450MB - Windows/Mac</span>
+        
+        <br><br>
+        <a href="index.html" style="color: #ffcc00; text-decoration: none; font-size: 0.9rem;">← Voltar para a Home</a>
+    </div>
+
+</body>
+</html>
